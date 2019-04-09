@@ -1,0 +1,13 @@
+server:
+  port: 8989
+  context-path: /springboot11
+spring:
+  datasource:
+    type: org.apache.commons.dbcp.BasicDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+mybatis:
+  type-aliases-package: com.baizhi.entity
+  mapper-locations: classpath:com/baizhi/mapper/*Mapper.xml
